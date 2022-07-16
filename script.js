@@ -1,10 +1,12 @@
 $(document).ready(function() {
+    console.log($("#checkMenu").prop("checked"));
     colorModePreview('#color_mode');
     $("#color_mode").on("change", function () {
         colorModePreview(this);
     })
     blurMode('#checkMenu');
     $("#checkMenu").on("change", function () {
+        console.log($("#checkMenu").prop("checked"));
         blurMode(this);
     })
     const mediaChange = window.matchMedia("(min-width: 860px)");
@@ -13,13 +15,13 @@ $(document).ready(function() {
         changeOnMedia(this);
     })
 
-    console.log($("#checkMenu").prop("checked"));
 
     $("#aboutMenu").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#about").offset().top - 50
         }, 800);
         $("#checkMenu").prop("checked") == false;
+        console.log($("#checkMenu").prop("checked"));
     });
     
     $("#projectsMenu").click(function() {
@@ -27,6 +29,7 @@ $(document).ready(function() {
             scrollTop: $("#projects").offset().top - 50
         }, 800);
         $("#checkMenu").prop("checked") == false;
+        console.log($("#checkMenu").prop("checked"));
     });
     
     $("#contactMenu").click(function() {
@@ -34,6 +37,7 @@ $(document).ready(function() {
             scrollTop: $("#contact").offset().top - 50
         }, 800);
         $("#checkMenu").prop("checked") == false;
+        console.log($("#checkMenu").prop("checked"));
     });
 
     $("#logo").click(function() {
@@ -41,6 +45,7 @@ $(document).ready(function() {
             scrollTop: 0
         }, 800);
         $("#checkMenu").prop("checked") == false;
+        console.log($("#checkMenu").prop("checked"));
     });
 
 });
