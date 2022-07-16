@@ -146,6 +146,7 @@ a {
 .logo {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .logo svg {
@@ -185,6 +186,7 @@ nav ul li a {
     position: relative;
     display: inline-block;
     transition: 0.5s color ease;
+    cursor: pointer;
 }
 
 nav ul li a.menuLink:after {
