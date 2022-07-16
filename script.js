@@ -17,24 +17,28 @@ $(document).ready(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#about").offset().top - 50
         }, 800);
+        $("#checkMenu").prop("checked") == false;
     });
     
     $("#projectsMenu").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#projects").offset().top - 50
         }, 800);
+        $("#checkMenu").prop("checked") == false;
     });
     
     $("#contactMenu").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#contact").offset().top - 50
         }, 800);
+        $("#checkMenu").prop("checked") == false;
     });
 
     $("#logo").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: 0
         }, 800);
+        $("#checkMenu").prop("checked") == false;
     });
 
 });
