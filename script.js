@@ -1,12 +1,10 @@
 $(document).ready(function() {
-    console.log($("#checkMenu").prop("checked"));
     colorModePreview('#color_mode');
     $("#color_mode").on("change", function () {
         colorModePreview(this);
     })
     blurMode('#checkMenu');
     $("#checkMenu").on("change", function () {
-        console.log($("#checkMenu").prop("checked"));
         blurMode(this);
     })
     const mediaChange = window.matchMedia("(min-width: 860px)");
@@ -20,32 +18,32 @@ $(document).ready(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#about").offset().top - 50
         }, 800);
-        $("#checkMenu").prop("checked") == false;
-        console.log($("#checkMenu").prop("checked"));
+        $("#checkMenu").prop("checked", false);
+        blurMode("#checkMenu");
     });
     
     $("#projectsMenu").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#projects").offset().top - 50
         }, 800);
-        $("#checkMenu").prop("checked") == false;
-        console.log($("#checkMenu").prop("checked"));
+        $("#checkMenu").prop("checked", false);
+        blurMode("#checkMenu");
     });
     
     $("#contactMenu").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#contact").offset().top - 50
         }, 800);
-        $("#checkMenu").prop("checked") == false;
-        console.log($("#checkMenu").prop("checked"));
+        $("#checkMenu").prop("checked", false);
+        blurMode("#checkMenu");
     });
 
     $("#logo").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: 0
         }, 800);
-        $("#checkMenu").prop("checked") == false;
-        console.log($("#checkMenu").prop("checked"));
+        $("#checkMenu").prop("checked", false);
+        blurMode("#checkMenu");
     });
 
 });
