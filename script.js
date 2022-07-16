@@ -13,6 +13,8 @@ $(document).ready(function() {
         changeOnMedia(this);
     })
 
+    console.log($("#checkMenu").prop("checked"));
+
     $("#aboutMenu").click(function() {
         $([document.documentElement, document.body]).animate({
             scrollTop: $("#about").offset().top - 50
