@@ -7,7 +7,7 @@ $(document).ready(function() {
     $("#checkMenu").on("change", function () {
         blurMode(this);
     })
-    const mediaChange = window.matchMedia("(min-width: 860px)");
+    const mediaChange = window.matchMedia("(min-width: 620px)");
     changeOnMedia(mediaChange);
     $(mediaChange).on("change", function () {
         changeOnMedia(this);
@@ -81,6 +81,13 @@ function changeOnMedia(el) {
 
         $('#btnTheme').addClass('reveal-19');
         $('#btnTheme').removeClass('reveal-12');
+
+        $('#firstTitle').addClass('reveal-10');
+        $('#firstTitle').removeClass('reveal-1');
+        $('#secondTitle').addClass('reveal-11');
+        $('#secondTitle').removeClass('reveal-2');
+        $('#btnContact').addClass('reveal-13');
+        $('#btnContact').removeClass('reveal-4');
     } else {
         $('#social1').addClass('reveal-1');
         $('#social1').removeClass('reveal-18');
@@ -102,6 +109,13 @@ function changeOnMedia(el) {
 
         $('#btnTheme').addClass('reveal-12');
         $('#btnTheme').removeClass('reveal-19');
+
+        $('#firstTitle').addClass('reveal-1');
+        $('#firstTitle').removeClass('reveal-10');
+        $('#secondTitle').addClass('reveal-2');
+        $('#secondTitle').removeClass('reveal-11');
+        $('#btnContact').addClass('reveal-4');
+        $('#btnContact').removeClass('reveal-13');
     }
 }
 
