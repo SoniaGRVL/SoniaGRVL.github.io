@@ -123,6 +123,15 @@ setTimeout(() => {
     sideBar.setProperty('--opacity', '1');
 }, 1700);
 
+setTimeout(() => {
+    $('#firstTitle').addClass('reveal-1');
+    $('#firstTitle').removeClass('reveal-10');
+    $('#secondTitle').addClass('reveal-2');
+    $('#secondTitle').removeClass('reveal-11');
+    $('#btnContact').addClass('reveal-4');
+    $('#btnContact').removeClass('reveal-13');
+}, 1900);
+
 const ratio = .12
 const options = {
     root: null,

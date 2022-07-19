@@ -73,7 +73,7 @@
 
 .checkbox {
     position: absolute;
-    display: block;
+    display: none;
     height: 32px;
     width: 32px;
     right: 35px;
@@ -151,7 +151,7 @@ a {
 
 .logo svg {
     width: 100%;
-    max-height: clamp(30px, 8vw, 40px);
+    max-height: clamp(50px, 10vw, 60px);
     display: inline-block;
 }
 
@@ -520,7 +520,16 @@ p {
 }
 
 .btn svg {
-    margin: 0 6px;
+    position: absolute;
+    padding-bottom: 5px;
+}
+
+.btn .imgSun {
+    left: 3px;
+}
+
+.btn .imgMoon {
+    right: 3px;
 }
 
 .lightMode .btn svg {
@@ -716,9 +725,19 @@ p {
     transition-delay: 2s;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 900px) {
+    .homePage {
+        padding: 0 15vw;
+    }
+}
+
+@media (max-width: 620px) {
     .toggleMenu {
         display: flex;
+    }
+
+    .checkbox {
+        display: block;
     }
 
     .header nav ul {
@@ -795,6 +814,10 @@ p {
     .footerSection {
         min-height: 35px;
         padding: 15px 15px 0 15px;
+    }
+
+    .homePage {
+        padding: 0 8vw;
     }
 }
 
