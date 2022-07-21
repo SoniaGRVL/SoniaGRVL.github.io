@@ -1,0 +1,83 @@
+.toggleMenu {
+    display: flex;
+}
+
+.checkbox {
+    display: block;
+}
+
+nav {
+    font-size: 1.2em;
+    font-weight: 900;
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.darkMode nav {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.lightMode nav {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.header nav ul li {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    margin-left: 0;
+    z-index: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.menu .buttonResume {
+    margin-left: 0;
+}
+
+.header nav ul .btnContent {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px 3vw;
+    display: none;
+}
+
+section {
+    margin: 0;
+}
+
+.socialList::after {
+    display: none;
+}
+
+.sideBar {
+    width: 100%;
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+.socialList {
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.footerSection {
+    min-height: 35px;
+    padding: 15px 15px 0 15px;
+}
+
+.homePage {
+    padding: 0 8vw;
+}
