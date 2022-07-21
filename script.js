@@ -2,7 +2,6 @@ $(document).ready(function() {
     detectDevice()
     $(window).on("resize", function () {
         detectDevice();
-        console.log(!!navigator.maxTouchPoints ? 'mobile' : 'computer');
     })
 
     colorModePreview('#color_mode');
@@ -55,10 +54,10 @@ $(document).ready(function() {
 });
 
 function detectDevice() {
-    if(!!navigator.maxTouchPoints) {
-        $('#screen')[0].href = "computer.css";
-    } else {
+    if(navigator.maxTouchPoints <= 1) {
         $('#screen')[0].href = "mobile.css";
+    } else if(navigator.maxTouchPoints > 1) {
+        $('#screen')[0].href = "computer.css";
     }
 }
 
