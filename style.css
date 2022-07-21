@@ -303,7 +303,7 @@ nav ul li a.menuLink:hover:after {
 /*main page*/
 
 .homePage {
-    height: 100vh;
+    height: calc(100vh - 70px);
     position: relative;
     padding: 0 8vw;
     filter: var(--blur);
@@ -311,7 +311,7 @@ nav ul li a.menuLink:hover:after {
 
 .homeTitle {
     line-height: 1.5;
-    height: 100vh;
+    height: calc(100vh - 70px);
     display: flex;
     flex-direction: column;
     position: relative;
