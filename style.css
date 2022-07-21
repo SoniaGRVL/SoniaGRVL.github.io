@@ -837,3 +837,9 @@ p {
         margin-top: 10%;
     }
 }
+
+@media (orientation: landscape) {
+    .header nav ul {
+        display: flex;
+    }
+}
