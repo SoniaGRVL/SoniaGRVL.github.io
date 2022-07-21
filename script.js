@@ -56,8 +56,10 @@ $(document).ready(function() {
 function detectDevice() {
     if(navigator.maxTouchPoints <= 1) {
         $('#screen')[0].href = "mobile.css";
+        $('#test').text("mobile");
     } else if(navigator.maxTouchPoints > 1) {
         $('#screen')[0].href = "computer.css";
+        $('#test').text("computer");
     }
 }
 
