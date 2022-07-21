@@ -1,25 +1,9 @@
 $(document).ready(function() {
-    var head  = document.getElementsByTagName('head')[0];
-    var link  = document.createElement('link');
-    if (navigator.maxTouchPoints) {
-        link.id = 'computer';
-        link.rel  = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'computer.css';
-        head.appendChild(link);
-        if ($('#mobile')) {
-            (this).disabled = true;
-        }
-    } else {
-        link.id = 'mobile';
-        link.rel  = 'stylesheet';
-        link.type = 'text/css';
-        link.href = 'mobile.css';
-        head.appendChild(link);
-        if ($('#computer')) {
-            (this).disabled = true;
-        }
-    }
+    detectDevice()
+    $(window).on("resize", function () {
+        detectDevice();
+        console.log(!!navigator.maxTouchPoints ? 'mobile' : 'computer');
+    })
 
     colorModePreview('#color_mode');
     $("#color_mode").on("change", function () {
@@ -69,6 +53,14 @@ $(document).ready(function() {
     });
 
 });
+
+function detectDevice() {
+    if(!!navigator.maxTouchPoints) {
+        $('#screen')[0].href = "computer.css";
+    } else {
+        $('#screen')[0].href = "mobile.css";
+    }
+}
 
 function colorModePreview(ele) {
     if($(ele).prop("checked") == true){

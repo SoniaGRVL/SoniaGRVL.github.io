@@ -1,3 +1,11 @@
+/*.headerWrap input[type="checkbox"]:checked~nav {
+    display: block;
+}
+
+.headerWrap input[type="checkbox"]:checked~nav ul .btnContent {
+    display: flex;
+}*/
+
 .toggleMenu {
     display: flex;
 }
@@ -28,6 +36,11 @@ nav {
 
 .lightMode nav {
     background: rgba(255, 255, 255, 0.7);
+}
+
+.header nav ul {
+    display: block;
+    align-items: center;
 }
 
 .header nav ul li {
