@@ -2,6 +2,10 @@
     .homePage {
         padding: 0 15vw;
     }
+
+    .gridProjects {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 620px) {

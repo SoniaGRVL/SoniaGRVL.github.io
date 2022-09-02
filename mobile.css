@@ -86,6 +86,10 @@ section {
     justify-content: center;
 }
 
+.gridProjects {
+    grid-template-columns: 1fr;
+}
+
 .footerSection {
     min-height: 35px;
     padding: 15px 15px 0 15px;
