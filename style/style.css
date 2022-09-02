@@ -19,6 +19,7 @@
     color: #14213D;
     letter-spacing: 0.063em;
     background-color: #f1f1e6;
+    font-weight: 400;
     overflow-x: hidden;
 }
 
@@ -27,6 +28,7 @@
     color: #f1f1e6;
     letter-spacing: 0.063em;
     background-color: #14213D;
+    font-weight: 400;
     overflow-x: hidden;
 }
 
@@ -98,6 +100,10 @@
     width: 100%;
     border-radius: 3px;
     background-color: #005fde;
+}
+
+.darkMode .menuLine {
+    background-color: #0093ff;
 }
 
 .line1 {
@@ -187,6 +193,10 @@ nav ul li a {
     cursor: pointer;
 }
 
+.darkMode nav ul li a {
+    color: #0093ff;
+}
+
 nav ul li a.menuLink:after {
     content: "";
     transition: 0.5s all ease;
@@ -264,6 +274,10 @@ nav ul li a.menuLink:hover:after {
     color: #005fde;
 }
 
+.darkMode .sideBar {
+    color: #0093ff;
+}
+
 .socialList {
     display: flex;
     flex-direction: column;
@@ -282,6 +296,10 @@ nav ul li a.menuLink:hover:after {
     transition: all 0.3s ease;
 }
 
+.darkMode .socialList li a svg {
+    fill: #0093ff;
+}
+
 .socialList li a svg:hover {
     fill: #f3bf3a;
     transform: translateY(-3px);
@@ -297,6 +315,10 @@ nav ul li a.menuLink:hover:after {
     color: #005fde;
     border-right: 1px solid;
     opacity: var(--opacity);
+}
+
+.darkMode .socialList::after, .darkMode .socialList::before {
+    color: #0093ff;
 }
 
 .socialList::before {
@@ -609,6 +631,10 @@ p {
     content: attr(data-on);
     left: 20px;
     background: #005fde;
+}
+
+.darkMode .btn-color-mode-switch input[type="checkbox"]:checked+.btn-color-mode-switch-inner:after {
+    background: #0093ff;
 }
 
 .btn-color-mode-switch input[type="checkbox"]:checked+.btn-color-mode-switch-inner:before {
