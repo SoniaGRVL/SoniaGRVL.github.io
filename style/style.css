@@ -16,7 +16,6 @@
 
 .lightMode {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     color: #14213D;
     letter-spacing: 0.063em;
     background-color: #f1f1e6;
@@ -25,7 +24,6 @@
 
 .darkMode {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     color: #f1f1e6;
     letter-spacing: 0.063em;
     background-color: #14213D;
