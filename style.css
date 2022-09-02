@@ -257,10 +257,10 @@ nav ul li a.menuLink:hover:after {
 /*Side bar social*/
 
 .sideBar {
-    width: 40px;
+    width: 70px;
     position: fixed;
-    bottom: 0px;
-    left: 40px;
+    bottom: 40px;
+    left: 0;
     right: auto;
     z-index: 11;
     color: #378eff;
@@ -269,14 +269,14 @@ nav ul li a.menuLink:hover:after {
 .socialList {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .socialList li {
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 .socialList li a svg {
@@ -290,14 +290,25 @@ nav ul li a.menuLink:hover:after {
 
 }
 
-.socialList::after {
+.socialList::after,
+.socialList::before {
     content: "";
     display: block;
-    width: 1px;
-    height: 90px;
-    margin: 15px auto 0;
-    background: #378eff;
+    width: 30px;
+    height: 60px;
+    color: #378eff;
+    border-right: 1px solid;
     opacity: var(--opacity);
+}
+
+.socialList::before {
+    border-top: 1px solid;
+    border-top-right-radius: 5px;
+}
+
+.socialList::after {
+    border-bottom: 1px solid;
+    border-bottom-right-radius: 5px;
 }
 
 /*main page*/

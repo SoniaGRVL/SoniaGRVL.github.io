@@ -67,7 +67,7 @@
         margin: 0;
     }
 
-    .socialList::after {
+    .socialList::after, .socialList::before {
         display: none;
     }
 
