@@ -97,7 +97,7 @@
     height: 2px;
     width: 100%;
     border-radius: 3px;
-    background-color: #378eff;
+    background-color: #005fde;
 }
 
 .line1 {
@@ -179,7 +179,7 @@ nav {
 
 nav ul li a {
     letter-spacing: 2px;
-    color: #378eff;
+    color: #005fde;
     padding: 3px 0;
     position: relative;
     display: inline-block;
@@ -261,7 +261,7 @@ nav ul li a.menuLink:hover:after {
     left: 0;
     right: auto;
     z-index: 11;
-    color: #378eff;
+    color: #005fde;
 }
 
 .socialList {
@@ -278,7 +278,7 @@ nav ul li a.menuLink:hover:after {
 }
 
 .socialList li a svg {
-    fill: #378eff;
+    fill: #005fde;
     transition: all 0.3s ease;
 }
 
@@ -294,7 +294,7 @@ nav ul li a.menuLink:hover:after {
     display: block;
     width: 30px;
     height: 60px;
-    color: #378eff;
+    color: #005fde;
     border-right: 1px solid;
     opacity: var(--opacity);
 }
@@ -608,7 +608,7 @@ p {
 .btn-color-mode-switch input[type="checkbox"]:checked+.btn-color-mode-switch-inner:after {
     content: attr(data-on);
     left: 20px;
-    background: #378eff;
+    background: #005fde;
 }
 
 .btn-color-mode-switch input[type="checkbox"]:checked+.btn-color-mode-switch-inner:before {
