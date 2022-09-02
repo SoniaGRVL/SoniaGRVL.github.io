@@ -387,7 +387,8 @@ p {
 }
 
 .imgPart .imgAboutPart img {
-    max-width: 100%;
+    width: 99%;
+    height: 99%;
     display: block;
     position: static;
 }
@@ -453,8 +454,8 @@ p {
 }
 
 .gridProjects .itemProject .imgProject .imgProjectInner img {
-    width: 100%;
-    height: 100%;
+    width: 99%;
+    height: 99%;
     object-position: 50% 50%;
     object-fit: cover;
 }
