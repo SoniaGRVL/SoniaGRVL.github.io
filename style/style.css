@@ -183,7 +183,7 @@ nav {
     margin-left: 20px;
 }
 
-nav ul li a {
+nav ul li div {
     letter-spacing: 2px;
     color: #005fde;
     padding: 3px 0;
@@ -193,11 +193,11 @@ nav ul li a {
     cursor: pointer;
 }
 
-.darkMode nav ul li a {
+.darkMode nav ul li div {
     color: #0093ff;
 }
 
-nav ul li a.menuLink:after {
+nav ul li div.menuLink:after {
     content: "";
     transition: 0.5s all ease;
     -webkit-backface-visibility: hidden;
@@ -211,11 +211,11 @@ nav ul li a.menuLink:after {
     transform: translateX(-50%);
 }
 
-nav ul li a:hover {
+nav ul li div:hover {
     color: #f3bf3a;
 }
 
-nav ul li a.menuLink:hover:after {
+nav ul li div.menuLink:hover:after {
     width: 100%;
 }
 
@@ -556,7 +556,6 @@ p {
 
 .btn svg {
     position: absolute;
-    padding-bottom: 5px;
 }
 
 .btn .imgSun {
