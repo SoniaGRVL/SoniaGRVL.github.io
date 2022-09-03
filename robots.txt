@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /
 
-Sitemap: https://soniagrvl.github.io/sitemap.xml
+Sitemap: https://soniagrvl.github.io/sitemap.txt
