@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd%22%3E">
   <url>
     <loc>https://soniagrvl.github.io/</loc>
+    <lastmod>2022-09-08T10:28:34+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
     <loc>https://soniagrvl.github.io/files/cvSoniaGrivel.pdf</loc>
-    <loc>https://soniagrvl.github.io/weather</loc>
-    <loc>https://soniagrvl.github.io/todo</loc>
-    <loc>https://github.com/SoniaGRVL</loc>
-    <loc>https://fr.linkedin.com/in/sonia-grivel-610077187</loc>
-    <lastmod>2022-09-08</lastmod>
+    <lastmod>2022-09-08T10:28:34+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://soniagrvl.github.io/weather/</loc>
+    <lastmod>2022-08-22T14:31:58+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://soniagrvl.github.io/todo/</loc>
+    <lastmod>2022-08-25T14:33:27+00:00</lastmod>
+    <priority>0.80</priority>
   </url>
 </urlset>
