@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Sonia Grivel est une jeune diplômée. Son objectif ? Devenir développeuse. Elle cherche des opportunités pour l'atteindre. Son portfolio présente son parcours et quelques projets qu'elle a développé."
+      content="Développeuse à Caen, ouverte à un poste front-end, back-end ou full stack (Caen ou full remote). Portfolio : projets, parcours et contact."
     />
-    <meta property="og:title" content="Sonia Grivel" />
+    <meta property="og:title" content="Sonia Grivel — Développeuse (Caen / full remote)" />
     <meta
       property="og:description"
-      content="Sonia Grivel est une jeune diplômée. Son objectif ? Devenir développeuse. Elle cherche des opportunités pour l'atteindre. Son portfolio présente son parcours et quelques projets qu'elle a développé."
+      content="Développeuse à Caen, ouverte à un poste front-end, back-end ou full stack (Caen ou full remote). Portfolio : projets, parcours et contact."
     />
     <meta
       property="og:image"
@@ -20,10 +19,10 @@
     <meta property="og:url" content="https://soniagrvl.github.io" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Sonia Grivel" />
+    <meta name="twitter:title" content="Sonia Grivel — Développeuse (Caen / full remote)" />
     <meta
       name="twitter:description"
-      content="Sonia Grivel est une jeune diplômée. Son objectif ? Devenir développeuse. Elle cherche des opportunités pour l'atteindre. Son portfolio présente son parcours et quelques projets qu'elle a développé."
+      content="Développeuse à Caen, ouverte à un poste front-end, back-end ou full stack (Caen ou full remote). Portfolio : projets, parcours et contact."
     />
     <meta
       name="twitter:image"
@@ -33,36 +32,23 @@
     <title>Sonia Grivel</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-        rel="stylesheet"
-        type="text/css"
-      />
-    </noscript>
     <link rel="stylesheet" href="./style/style.css" />
-    <link id="screen" rel="stylesheet" href="./style/computer.css" />
+    <link rel="stylesheet" href="./style/responsive.css" />
   </head>
 
-  <body class="">
+  <body>
     <div class="wrap-outer">
       <div class="wrap">
         <header class="header">
           <div class="headerWrap">
             <input class="checkbox" type="checkbox" id="checkMenu" />
-            <div class="toggleMenu" id="toggleMenu">
+            <label for="checkMenu" aria-label="Menu" aria-controls="menuNav" class="toggleMenu" id="toggleMenu">
               <span class="menuLine line1"></span>
               <span class="menuLine line2"></span>
               <span class="menuLine line3"></span>
-            </div>
-            <div id="logo">
-              <div class="reveal-content">
-                <div class="logo reveal-1">
+            </label>
+            <a href="#home" aria-label="Accueil" id="logo">
+                <div class="logo reveal" style="--d: 0">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="234.000000pt"
@@ -146,36 +132,30 @@ c-5 -65 -51 -163 -103 -221 l-36 -40 6 40 c14 84 102 275 127 275 7 0 9 -19 6
                     </g>
                   </svg>
                 </div>
-              </div>
-            </div>
-            <nav class="menu reveal-top">
+            </a>
+            <nav id="menuNav" class="menu reveal-top">
               <ul>
-                <li id="menu1" class="menuList reveal-2">
-                  <div id="aboutMenu" class="menuLink">À propos</div>
+                <li id="menu1" class="menuList reveal" style="--d: 1">
+                  <a href="#about" class="menuLink">À propos</a>
                 </li>
-                <li id="menu2" class="menuList reveal-3">
-                  <div id="projectsMenu" class="menuLink">Projets</div>
+                <li id="menu2" class="menuList reveal" style="--d: 2">
+                  <a href="#projects" class="menuLink">Projets</a>
                 </li>
-                <li id="menu3" class="menuList reveal-4">
-                  <div id="contactMenu" class="menuLink">Contact</div>
+                <li id="menu3" class="menuList reveal" style="--d: 3">
+                  <a href="#contact" class="menuLink">Contact</a>
                 </li>
-                <li id="menu4" class="menuList resume reveal-5">
-                  <a
-                    id="menu"
-                    class="buttonResume"
-                    href="./files/cvSoniaGrivel.pdf"
-                    target="_blank"
-                    >Mon CV</a
+                <li id="menu4" class="menuList resume reveal" style="--d: 4">
+                  <a href="./files/Sonia_Grivel_CV.pdf" class="buttonResume" target="_blank" rel="noopener noreferrer">Mon CV</a
                   >
                 </li>
 
                 <li class="menuList btnContent reveal-content">
-                  <div id="btnTheme" class="btn reveal-19">
+                  <div id="btnTheme" class="btn reveal" style="--d: 0">
                     <svg
                       class="imgSun"
                       xmlns="http://www.w3.org/2000/svg"
                       width="13px"
-                      height="25px"
+                      height="20px"
                       viewBox="0 0 512.000000 512.000000"
                       preserveAspectRatio="xMidYMid meet"
                     >
@@ -239,7 +219,7 @@ l-43 30 -286 2 c-158 1 -301 -2 -318 -6z"
                       class="imgMoon"
                       xmlns="http://www.w3.org/2000/svg"
                       width="13px"
-                      height="25px"
+                      height="20px"
                       viewBox="0 0 512.000000 512.000000"
                       preserveAspectRatio="xMidYMid meet"
                     >
@@ -284,18 +264,17 @@ l-43 30 -286 2 c-158 1 -301 -2 -318 -6z"
           </div>
         </header>
       </div>
-      <div class="homePage reveal-bottom">
+      <div id="home" class="homePage reveal-bottom">
         <div class="homeTitle">
-          <h1 id="firstTitle" class="titleText firstTitle reveal-10">
+          <h1 id="firstTitle" class="titleText firstTitle reveal" style="--d: 0">
             Sonia Grivel
           </h1>
-          <p id="secondTitle" class="titleText secondTitle reveal-11">
-            Mon objectif ? Devenir développeuse et découvrir l'étendu de ce
-            métier !
+          <p id="secondTitle" class="titleText secondTitle reveal" style="--d: 1">
+            Développeuse full stack à Caen — ouverte à un poste front-end, back-end ou full stack (Caen ou full remote).
           </p>
-          <div id="btnContact" class="reveal-13">
+          <div id="btnContact" class="reveal" style="--d: 2">
             <a class="buttonResume" href="mailto:soniagrivel.pro@gmail.com"
-              >Contact</a
+              >Me contacter</a
             >
           </div>
         </div>
@@ -304,14 +283,14 @@ l-43 30 -286 2 c-158 1 -301 -2 -318 -6z"
         <section id="about" class="sectionAbout">
           <figure class="inner">
             <div class="imgPart reveal-left">
-              <div class="reveal-1">
+              <div class="reveal" style="--d: 0">
                 <div class="imgAboutPart">
-                  <img src="./img/Sonia.webp" alt="Sonia" />
+                  <img src="./img/Sonia.webp" alt="Sonia" loading="lazy" decoding="async" />
                 </div>
               </div>
             </div>
             <figcaption class="aboutDesc reveal-right">
-              <div class="aboutDescContent reveal-1">
+              <div class="aboutDescContent reveal" style="--d: 1">
                 <div class="aboutDescContent">
                   <div>
                     <h2 class="titleSection">Parlons de moi</h2>
@@ -319,39 +298,17 @@ l-43 30 -286 2 c-158 1 -301 -2 -318 -6z"
                 </div>
               </div>
 
-              <div class="aboutDescContent reveal-3">
+              <div class="aboutDescContent reveal" style="--d: 2">
                 <div style="margin-top: 6%">
                   <p>
-                    Je suis Sonia, mon intérêt pour le développement a commencé
-                    pendant ma première année à l'université. Je n'avais aucune
-                    expérience en informatique. Alors je vous laisse imaginer ma
-                    joie quand j'ai réussi à compiler et à exécuter un "Hello
-                    World!" en C et en Python.
+                    Mon intérêt pour le développement a commencé à l'université, avec le premier "Hello World". Cela m'a donné envie d'aller plus loin, de faire des programmes plus avancés.
+                    Depuis, j'ai pris goût à la résolution de problèmes : comprendre, modéliser, implémenter proprement, et améliorer au fil des retours.
                   </p>
                   <p>
-                    Puis, au cours de mon cursus, j'ai fait des programmes plus
-                    avancés et découvert d'autres langages et d'autres domaines.
+                    J'ai découvert le travail d'équipe en entreprise (organisation, autonomie, outils, API, intégrations) et j'aime construire, aider, apprendre.
                   </p>
                   <p>
-                    Lors de mon stage en 3e année de Licence, j'ai pu
-                    découvrir ce qu'est vraiment un développeur au seins d'une entreprise.
-                    Et j'ai aimé ! Les réunions chaque matins. Travailler en
-                    équipe et en autonomie. J'ai tout aimé. Mon projet était de
-                    travailler sur un service web sous Angular. Je ne
-                    connaissais ni le framework ni le TypeScript avant. Mais j'ai appris sur le
-                    tas, je me suis adaptée et j'ai réussi mon projet de stage.
-                    J'ai travaillé avec une API REST, avec PayPal. J'ai
-                    découvert Wampserver64, Postman et d'autres outils et
-                    méthodes de travail. Bref, c'était une expérience vraiment
-                    intéressante et enrichissante.
-                  </p>
-                  <p>
-                    Aujourd'hui, je cherche des opportunités pour devenir
-                    développeuse. Web ? Software ? Data ? Je ne demande qu'à
-                    découvrir. En ce moment je développe des petits projets pour
-                    comprendre le fonctionnement de React (apparemment, c'est de
-                    plus en plus utilisé). Mais je suis ouverte à toute opinion pour me dire que tel langage ou tel framework
-                    est plus intéressant.
+                    Aujourd'hui, je cherche une opportunité à Caen ou en full remote, sur un poste front-end, back-end ou full stack. Je m'adapte vite à une stack : je mise surtout sur la logique, la rigueur et l'envie de faire bien.
                   </p>
                 </div>
               </div>
@@ -360,7 +317,7 @@ l-43 30 -286 2 c-158 1 -301 -2 -318 -6z"
         </section>
         <section id="projects" class="projectSection">
           <div class="reveal-bottom">
-            <div class="reveal-1">
+            <div class="reveal" style="--d: 0">
               <h2 class="titleSection titleProject">Mes projets</h2>
             </div>
           </div>
@@ -368,14 +325,13 @@ l-43 30 -286 2 c-158 1 -301 -2 -318 -6z"
             <a
               class="itemProject reveal-content"
               href="https://soniagrvl.github.io/weather"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
-              <div class="imgProject reveal-2">
+              <div class="imgProject reveal" style="--d: 1">
                 <div class="imgProjectInner">
-                  <img src="./img/weather.webp" alt="Projet weather" />
+                  <img src="./img/weather.webp" alt="Projet weather" loading="lazy" decoding="async" />
                 </div>
               </div>
-              <div class="overlayProjects"></div>
               <div class="textProjects">
                 <p>Dashboard météo</p>
                 <p>Objectif : Interroger une API externe avec React</p>
@@ -384,14 +340,13 @@ l-43 30 -286 2 c-158 1 -301 -2 -318 -6z"
             <a
               class="itemProject reveal-content"
               href="https://soniagrvl.github.io/todo"
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
             >
-              <div class="imgProject reveal-4">
+              <div class="imgProject reveal" style="--d: 2">
                 <div class="imgProjectInner">
-                  <img src="./img/todo.webp" alt="Projet todo" />
+                  <img src="./img/todo.webp" alt="Projet todo" loading="lazy" decoding="async" />
                 </div>
               </div>
-              <div class="overlayProjects"></div>
               <div class="textProjects">
                 <p>Todo List</p>
                 <p>Objectif : Développer une application CRUD avec React</p>
@@ -401,23 +356,22 @@ l-43 30 -286 2 c-158 1 -301 -2 -318 -6z"
         </section>
         <section id="contact" class="contactSection">
           <div class="reveal-bottom">
-            <div class="reveal-1">
+            <div class="reveal" style="--d: 0">
               <div class="contactContent">
                 <h2 class="titleSection">Et maintenant ?</h2>
               </div>
             </div>
 
-            <div class="contactContent reveal-3">
-              <div style="margin-top: 4%; max-width: 400px">
+            <div class="contactContent reveal" style="--d: 1">
+              <div style="margin-top: 30px; max-width: 400px">
                 <p>
-                  Des questions ? Envie de parler ? Envie de travailler ensemble
-                  ?
+                  Envie d'échanger sur un poste à Caen ou en full remote ?
                 </p>
-                <p>Je suis ouverte à tout.</p>
+                <p>Je réponds avec plaisir : projet, équipe, contexte, stack — je suis ouverte à la discussion.</p>
               </div>
             </div>
 
-            <div class="contactContent reveal-5">
+            <div class="contactContent reveal" style="--d: 2">
               <a class="buttonResume" href="mailto:soniagrivel.pro@gmail.com"
                 >Contactez-moi</a
               >
@@ -425,19 +379,19 @@ l-43 30 -286 2 c-158 1 -301 -2 -318 -6z"
           </div>
         </section>
         <footer class="footerSection reveal-content">
-          <div class="footerPart reveal-1">
-            <div>© 2022 - Sonia Grivel</div>
+          <div class="footerPart reveal" style="--d: 0">
+            <div>© 2026 - Sonia Grivel</div>
           </div>
         </footer>
         <div class="sideBar reveal-bottom">
-          <ul class="socialList">
+          <ul class="socialList" style="--d: 0">
             <li>
               <a
                 href="https://github.com/SoniaGRVL"
                 aria-label="GitHub"
                 id="social3"
-                class="reveal-20"
-                target="_blank"
+                class="reveal" style="--d: 0"
+                target="_blank" rel="noopener noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -477,8 +431,8 @@ c153 96 304 167 407 193 85 21 159 31 191 25 28 -5 33 -12 52 -72 57 -178 67
                 href="https://fr.linkedin.com/in/sonia-grivel-610077187"
                 aria-label="LinkedIn"
                 id="social2"
-                class="reveal-19"
-                target="_blank"
+                class="reveal" style="--d: 1"
+                target="_blank" rel="noopener noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -512,10 +466,9 @@ l-40 -60 -2 188 -3 189 -407 3 -408 2 0 -1370 0 -1370 425 0 425 0 0 733 c0
             <li>
               <a
                 href="mailto:soniagrivel.pro@gmail.com"
-                aria-label="mail"
+                aria-label="Email"
                 id="social1"
-                class="reveal-18"
-                target="_blank"
+                class="reveal" style="--d: 2"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -548,12 +501,6 @@ m-2688 -1176 l-647 -648 0 1295 0 1295 647 -648 648 -647 -648 -647z m3873
         </div>
       </main>
     </div>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./script/script.js"></script>
+    <script type="module" src="./script/script.js"></script>
   </body>
 </html>
