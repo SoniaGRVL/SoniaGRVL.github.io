@@ -6,7 +6,7 @@ spécialisée .NET / C# et SQL Server, ouverte à d'autres langages, basée à C
 Site statique, sans framework — HTML sémantique, CSS moderne et
 JavaScript vanilla.
 
-🔗 **[Voir le site en ligne](https://ton-url-ici)**
+🔗 **[Voir le site en ligne](https://soniagrvl.github.io)**
 
 ---
 
@@ -28,8 +28,8 @@ JavaScript vanilla.
 
 ```bash
 # Cloner le dépôt
-git clone https://github.com/<ton-user>/sonia-portfolio.git
-cd sonia-portfolio
+git clone https://github.com/SoniaGRVL/SoniaGRVL.github.io.git
+cd SoniaGRVL.github.io
 
 # Installer les dépendances
 npm install
@@ -112,11 +112,6 @@ l'identité visuelle du site.
 Chaque projet suit un format **case study** : Problème → Approche →
 Résultat. Pour en ajouter un, dupliquer un bloc `<article class="project-card">`
 dans la section `#projets` de `index.html`.
-
-### CV
-
-Remplacer le PDF dans `public/cv/` et ajuster le `href` du bouton
-« Télécharger mon CV » dans `index.html`.
 
 ---
 
