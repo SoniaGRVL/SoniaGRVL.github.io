@@ -1,6 +1,0 @@
-export default {
-  extends: ["stylelint-config-standard"],
-  rules: {
-    "declaration-block-no-redundant-longhand-properties": true
-  }
-};
